@@ -1,16 +1,18 @@
 #container{
-    height: 400px;
+    height: 350px;
     width: 600px;
     background: linear-gradient(#e66465, #9198e5);
-    text-align: left;
     margin-left: 30px;
     border-radius: 20px;
 }
-
+#container #buttons{
+    text-align: center;
+    margin-top: 100px;
+}
 #container label{
-    display:grid;
-    font-size: 50px;
-    margin: 40px;
+    display: inline;
+    font-size: 40px;
+    padding: 40px;
     color: wheat;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
@@ -20,7 +22,7 @@
     width: 150px;
     height: 50px;
     background-color:#99deed;
-    margin-left: 35px;
+    margin-left: 20px;
     border-radius: 50%;
     border: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
