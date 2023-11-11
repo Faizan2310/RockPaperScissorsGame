@@ -16,21 +16,63 @@ rockBtn.addEventListener("click",()=>{
     switch (computerChoice) {
         case "Rock":
             message.textContent = "Draw";
+            container.style.background = "";
             break;
         case "Paper":
             message.textContent = "You Lost!";
+            container.style.background = "linear-gradient(red,yellow)";
             break;
         case "Scissors":
             message.textContent = "You Won!";
-            player.classList.add('celebrate');
-            setTimeout(() => {
-                player.classList.remove('celebrate');
-            }, 1000);
+            container.style.background= "linear-gradient(green,blue)"
             break;
 
     }
 })
 
+paperBtn.addEventListener("click",()=>{
+    const computerChoice = getRandom(arr);
+    player.textContent = "Paper";
+    computer.textContent = computerChoice;
+    
+    switch (computerChoice) {
+        case "Paper":
+            message.textContent = "Draw";
+            container.style.background = "";
+            break;
+        case "Scissors":
+            message.textContent = "You Lost!";
+            container.style.background = "linear-gradient(red,yellow)";
+            break;
+        case "Rock":
+            message.textContent = "You Won!";
+            container.style.background= "linear-gradient(green,blue)"
+            break;
+
+    }
+})
+
+scissorsBtn.addEventListener("click",()=>{
+    const computerChoice = getRandom(arr);
+    player.textContent = "Scissors";
+    computer.textContent = computerChoice;
+    
+    switch (computerChoice) {
+        case "Scissors":
+            message.textContent = "Draw";
+            container.style.background = "";
+            break;
+        case "Rock":
+            message.textContent = "You Lost!";
+            container.style.background = "linear-gradient(red,yellow)";
+            break;
+        case "Paper":
+            message.textContent = "You Won!";
+            container.style.background= "linear-gradient(green,blue)"
+            break;
+
+    }
+})
 
 
 const arr = ["Rock", "Paper", "Scissors"];
