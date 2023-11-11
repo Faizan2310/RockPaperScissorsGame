@@ -1,0 +1,28 @@
+#container{
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(#e66465, #9198e5);
+    text-align: left;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+#container label{
+    display:grid;
+    font-size: 50px;
+    margin: 40px;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+#container button{
+    width: 150px;
+    height: 50px;
+    background-color:#99deed;
+    margin-left: 35px;
+    border-radius: 50%;
+    border: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
